@@ -1,5 +1,9 @@
-import hello from './components/hello';
-import { name } from './components/hello2';
+'use strict'
 
-console.info(`Hello ${hello.name}`);
-console.info(`Hello ${name()}`);
+import * as tweets from 'utils/api'
+
+tweets
+  .api()
+  .then(data => {
+    console.log(data)
+  })
