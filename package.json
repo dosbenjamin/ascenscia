@@ -36,5 +36,8 @@
     "stylelint-config-standard": "^19.0.0",
     "stylelint-scss": "^3.11.1",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "odometer": "^0.4.8"
   }
 }

@@ -1,7 +1,13 @@
+import Odometer from 'odometer'
+
 export default {
   init (i) {
-    document.body.innerHTML = `
-    <span>${i}</span>
-    `
+    const $el = document.querySelector('span')
+    const od = new Odometer({
+      el: $el,
+      format: '(,ddd)',
+      theme: 'default'
+    })
+    od.update(i)
   }
 }
