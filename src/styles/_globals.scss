@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 80px 120px;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $c-beige;
+  position: absolute
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.red {
+  color: $c-red;
+
+  &--right {
+    text-align: right;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.line-break {
+  display: block;
+}

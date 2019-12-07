@@ -1,0 +1,13 @@
+.counter {
+  margin-top: 80px;
+  font-size: 108px;
+  line-height: 0.98;
+  font-weight: 700;
+
+  &__number {
+    font-family: "Frank Ruhl Libre", serif !important;
+    font-size: 200px;
+    line-height: 0.8 !important;
+    color: $c-red;
+  }
+}

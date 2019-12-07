@@ -1,0 +1,37 @@
+.progress {
+  width: 400px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 60px auto;
+
+  &::-webkit-progress-bar {
+    border: 1px solid $c-black;
+    background-color: transparent;
+  }
+
+  &[value]::-webkit-progress-value {
+    background-color: $c-black;
+    height: 13px;
+  }
+}
+
+.progress-value {
+  font-family: "Frank Ruhl Libre", serif !important;
+  display: inherit !important;
+  text-align: center;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto 0 auto;
+  color: $c-black;
+
+  &::after {
+    content: "%";
+  }
+}

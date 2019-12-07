@@ -1,3 +1,10 @@
-@import 'odometer/themes/odometer-theme-default';
-@import 'utils/variables';
-@import 'components/homepage';
+@import "odometer/themes/odometer-theme-default";
+@import "utils/colors";
+@import "utils/type";
+@import "globals";
+@import "components/counter";
+@import "components/logo";
+@import "components/header";
+@import "components/last-user";
+@import "components/video";
+@import "components/progress";
