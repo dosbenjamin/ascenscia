@@ -1,18 +1,15 @@
 'use strict'
 
-import tweets from 'utils/api'
-import counter from 'components/counter'
-// import last from 'components/last-user'
-
-(function () {
-  const refreshDB = () => {
-    tweets
-      .api()
-      .then(data => {
-        counter.init(data.count)
-        // last.init(data.lastUser)
-      })
-    setTimeout(refreshDB, 10000)
+import home from 'pages/home'
+import video from 'pages/video'
+;(function () {
+  const { namespace } = document.body.dataset
+  switch (namespace) {
+    case 'home':
+      home.init()
+      break
+    case 'video':
+      video.init()
+      break
   }
-  refreshDB()
-}())
+})()
