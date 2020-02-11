@@ -1,15 +1,16 @@
-'use strict'
+import home from 'pages/home';
+import video from 'pages/video';
 
-import home from 'pages/home'
-import video from 'pages/video'
-;(function () {
+(function () {
+  'use strict';
+
   const { namespace } = document.body.dataset
   switch (namespace) {
     case 'home':
       home.init()
-      break
+      break;
     case 'video':
       video.init()
-      break
+      break;
   }
 })()
