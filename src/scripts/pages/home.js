@@ -1,8 +1,9 @@
-import tweets from 'utils/api'
-import counter from 'components/counter'
-import last from 'components/last-user'
+import tweets from 'utils/api';
+import counter from 'components/counter';
+import last from 'components/last-user';
 
-const url = 'https://benjamindossantos.be/projets/ascenscia/api/twitter/twitter_json.php'
+const url =
+  'https://benjamindossantos.be/projets/ascenscia/api/twitter/twitter_json.php';
 
 export default {
   init () {
@@ -12,7 +13,7 @@ export default {
         last.init(data.statuses)
       })
       setTimeout(refreshDB, 5500)
-    }
+    };
     refreshDB()
   }
 }
